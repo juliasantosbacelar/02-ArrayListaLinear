@@ -14,14 +14,29 @@ void buscarElemento();
 
 
 const int MAX = 5;
-int lista[MAX]{};
+int n, busca, lista[MAX]{};
 int nElementos = 0;
+
 
 
 int main()
 {
 	menu();
 }
+
+void inserirElemento(){
+	cout << "Digite um numero:";
+	cout << busca;
+	for(n = 0; n= busca; n++){
+		if(n = nElementos++){
+           cin << 
+		}
+
+	}
+
+ 
+} 
+
 
 void menu()
 {
@@ -69,7 +84,7 @@ void inicializar()
 
 }
 
-void exibirQuantidadeElementos() {
+void exibirQuantidadeElementos() {// exibe as em uso
 
 	cout << "Quantidade de elementos: " << nElementos << endl;
 
