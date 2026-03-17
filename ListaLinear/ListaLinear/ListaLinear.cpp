@@ -14,7 +14,7 @@ void buscarElemento();
 
 
 const int MAX = 5;
-int n, busca, lista[MAX]{};
+int lista[MAX]{};
 int nElementos = 0;
 
 
@@ -23,19 +23,6 @@ int main()
 {
 	menu();
 }
-
-void inserirElemento(){
-	cout << "Digite um numero:";
-	cout << busca;
-	for(n = 0; n= busca; n++){
-		if(n = nElementos++){
-           cin << 
-		}
-
-	}
-
- 
-} 
 
 
 void menu()
@@ -118,7 +105,68 @@ void inserirElemento()
 }
 
 // deve ser implementada como resposta ao exercicio
-void buscarElemento()
-{
+void buscarElemento() {
+
+    int numero;
+    bool encontrado = false;
+
+    cout << "Digite um numero para busca-lo: \n";
+    cin >> numero;
+
+    cout << "Resultado: encontrado nas posicoes ";
+
+    for (int i = 0; i < nElementos; i++) {
+        if (lista[i] == num) {
+            cout << i << ", ";
+            encontrado = true;
+        }
+    }
+
+    if (!encontrado) {
+        cout << "\nNumero nao encontrado \n";
+    }
+    else {
+        cout << "\n";
+    }
 
 }
+/*
+	int numero; 
+	int numeroRepetido[];
+	cout << "Digite um numero que queira buscar na lista: \n";
+
+	cin >> numero;
+
+	for (int i=0 ; i < nElementos; i++) {
+
+		if (lista[i] == numero) {
+			cout << "Encontrado na posicao " << endl;
+
+			numeroRepetido += numero;
+
+			for (int n = 0; n < numeroRepetido.length; n++) {
+
+				cout << numeroRepetido[i] << " \n";
+
+			}
+
+		}
+		
+	}
+	cout << "Numero não encontrado \n";
+}
+
+	int numero; 
+	cout << "Digite um numero para buscar na lista: \n";
+
+	cin >> numero;
+
+	for (int i=0 ; i < nElementos; i++) {
+
+		if (lista[i] == numero) {
+			cout << "Encontrado na posicao " << i;
+
+			}
+			
+		}
+*/
